@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Busca CEP</title>
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.6.2/css/bulma.css">
+  
+  <style type="text/css">
+
+        body {
+          display: flex;
+          height: 100vh;
+          flex-direction: column;
+        }
+        .main {
+          flex: 1;
+        }
+        .header {
+          padding: 1rem;
+        }
+        .section {
+          padding: 1.5rem;
+        }
+        #resultado {
+          padding: 1rem 0; 
+        }
+        .footer {
+          padding: 0.8rem;
+        }
+
+  </style>
+
+    
+</head>
+
+<body class="corpo" id="conteudo">
+  <div class="main">
+
+    <section class="hero is-primary">
+      <div class="header">
+        <div class="container">
+            <h1 class="title"> 
+                <span class="icon is-small is-left">
+                    <i class="fas fa-location-arrow"></i>
+                </span>  
+                &nbsp;
+                Busca CEP 
+            </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <form id="consulta">
+          <div class="field">
+            <div class="control has-icons-left has-icons-right">
+              <input id="cep" class="input is-hovered is-large" type="text" placeholder="Digite o CEP" maxlength="9" autocomplete="off" tabindex="1" autofocus required>
+              <p class="help has-text-grey">Exemplo: 02031-021</p>
+              <span class="icon is-small is-left">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div id="resultado" class="container"></div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        Copyright © - Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/vanilla-masker@1.2.0/build/vanilla-masker.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
