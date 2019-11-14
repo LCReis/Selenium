@@ -1,0 +1,1 @@
+O projeto se trata de uma aplicação web que usa uma API para consultar os dados de determinado CEP, e também um console framework para homologar as informações.
