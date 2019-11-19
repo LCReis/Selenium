@@ -15,7 +15,7 @@ namespace SeleniumCEP
 
             var driver = new ChromeDriver();
 
-            driver.Url = @"C:\Projects\buscaCEP\index.html";
+            driver.Url = @"C:\Projects\consultaCEP\index.html";
             driver.Navigate();
 
             //"14080-200"
